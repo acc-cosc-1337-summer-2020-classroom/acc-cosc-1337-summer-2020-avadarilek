@@ -12,9 +12,3 @@ Display the total:
 Total: 100
 
 */
-int main() 
-{
-	
-	
-	return 0;
-}
