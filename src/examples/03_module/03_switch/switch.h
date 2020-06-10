@@ -6,3 +6,4 @@
 
 
 
+std::string menu(int num);
