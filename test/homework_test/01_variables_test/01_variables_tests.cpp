@@ -6,9 +6,15 @@ TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
 
-TEST_CASE("Verify sum_numbers function") 
+TEST_CASE("Verify that the function get_sales_tax_amount with parameter 10 returns .675, and parameter 20 returns 1.35") 
 {
-	REQUIRE(add_numbers(5, 5) == 10);
-	REQUIRE(add_numbers(10, 10) == 20);
+	REQUIRE(get_sales_tax_amount(10)== .675);
+	REQUIRE(get_sales_tax_amount(20) == 1.35);
 }
 
+TEST_CASE("Verify that function get_tip_amount function with parameters 20 and 15% returns 3, and parameter 20 and 20% returns 4")
+{
+	REQUIRE(get_tip_amount(20, .15) == 3);
+	REQUIRE(get_tip_amount(20, .2) == 4);
+
+}
