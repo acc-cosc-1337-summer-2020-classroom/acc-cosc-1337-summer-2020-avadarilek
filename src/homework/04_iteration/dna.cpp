@@ -9,7 +9,7 @@ Return quotient.
 
 double get_gc_content(const string& dna)
 {
-    int GC_count{0};
+    double GC_count{0};
 
     for(char nucleotide: dna)
     {
@@ -18,6 +18,8 @@ double get_gc_content(const string& dna)
             GC_count++;
         }
     }
+
+    return GC_count / dna.size();
 }
 
 
